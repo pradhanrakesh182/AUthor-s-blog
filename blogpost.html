@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blogpost.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Blogs of Authors/</title>
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="img/logo.png" width="94px" alt=""></span>
+            </a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/users.html">Users</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Search">
+                <button class="btn">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+
+    <div class="m-auto blog-post-content max-width-2 m-auto my-2"><br>
+
+        <div class="max-width-1 m-auto font2">
+            <h1>Blog Posts</h1><br>
+            <section id="posts"></section>
+            <template id="post-template">
+                <div class="post">
+                    <img src="" alt="" class="post__img">
+                    <a href="blogpost.html" style="text-decoration: none;">
+                        <h2 class="post__title"></h2>
+                    </a> <br>
+                    <p class="post__body"></p>
+                </div>
+            </template>
+            <section id="comment"></section>
+            <template id="comment-template">
+                <h4 class="comment_name"></h4>
+                <h5 class="comment_email"></h5>
+                <p class="comment_body"></p>
+            </template>
+
+    </div>
+    </div>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="main.js"></script>
+    <script src="comment.js"></script>
+</body>
+
+</html>
